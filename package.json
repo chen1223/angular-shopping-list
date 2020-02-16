@@ -8,7 +8,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish:git": "ng build --prod --base-href \"https://chen1223.github.io/angular-shopping-list/\" && npm run push:gitpage",
+    "push:gitpage": "ngh --dir=dist/angular-shopping-list"
   },
   "private": true,
   "dependencies": {
