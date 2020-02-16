@@ -13,7 +13,7 @@ import { HomeComponent } from './core/home/home.component';
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'shopping-list', component: ShoppingListComponent },
-	{ path: 'recipes', loadChildren: './recipes/recipes.modules#RecipesModule' },
+	{ path: 'recipes', loadChildren: () => import('./recipes/recipes.modules').then(m => m.RecipesModule) },
 ];
 
 @NgModule({

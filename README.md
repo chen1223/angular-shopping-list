@@ -1,3 +1,6 @@
+# Sign in to the Application
+The application use Google Firebase for authentication. Use username: test@test.com/password: test123 to sign in to the application.
+
 # Ng4CompleteGuide
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.

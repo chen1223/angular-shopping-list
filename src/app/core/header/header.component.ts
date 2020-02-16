@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
 
   constructor(private dataStorageService: DataStorageService,
-              private authService: AuthService) { }
+              public authService: AuthService) { }
 
   ngOnInit() {
   }
